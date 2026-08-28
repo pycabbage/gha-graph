@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["cloudflare-env.d.ts"],
+  "plugins": ["typescript", "unicorn", "oxc", "nextjs", "react", "react-perf", "eslint"],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {},
+  "options": {
+    "typeCheck": true,
+    "typeAware": true
+  },
+  "env": {
+    "builtin": true
+  }
+}
