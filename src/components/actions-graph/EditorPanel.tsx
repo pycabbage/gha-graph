@@ -26,10 +26,10 @@ export function EditorPanel({
   return (
     <div
       className={`
-        flex w-[380px] min-w-[380px] flex-col border-r
+        flex w-95 min-w-95 flex-col border-r
         border-(--graph-border) bg-(--graph-card-bg)
         transition-[margin-left] duration-200
-        ${collapsed ? "ml-[-380px]" : "ml-0"}
+        ${collapsed ? "-ml-95" : "ml-0"}
       `}
     >
       <header
