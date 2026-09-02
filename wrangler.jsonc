@@ -31,10 +31,16 @@
   ],
   "observability": {
     "enabled": true,
+    "logs": {
+      "enabled": true,
+    },
+    "traces": {
+      "enabled": true,
+    },
   },
   "upload_source_maps": true,
   "build": {
-    "command": "bun opennextjs-cloudflare build"
+    "command": "bun opennextjs-cloudflare build",
   },
   /**
    * Smart Placement
