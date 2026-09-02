@@ -1,0 +1,97 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["cloudflare-env.d.ts"],
+  "plugins": ["typescript", "unicorn", "oxc", "nextjs", "react", "react-perf", "eslint", "import"],
+  "jsPlugins": ["eslint-plugin-better-tailwindcss"],
+  "categories": {
+    "correctness": "error",
+  },
+  "rules": {
+    "better-tailwindcss/enforce-canonical-classes": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "react",
+            "importNames": ["useEffect", "useLayoutEffect"],
+          },
+          {
+            "name": "timers",
+            "importNames": ["setTimeout"],
+          },
+          {
+            "name": "node:timers",
+            "importNames": ["setTimeout"],
+          },
+          {
+            "name": "timers/promises",
+            "importNames": ["setTimeout"],
+          },
+          {
+            "name": "node:timers/promises",
+            "importNames": ["setTimeout"],
+          },
+        ],
+      },
+    ],
+    "no-restricted-properties": [
+      "error",
+      {
+        "object": "React",
+        "property": "useEffect",
+      },
+      {
+        "object": "React",
+        "property": "useLayoutEffect",
+      },
+      {
+        "object": "window",
+        "property": "setTimeout",
+      },
+      {
+        "object": "globalThis",
+        "property": "setTimeout",
+      },
+      {
+        "object": "self",
+        "property": "setTimeout",
+      },
+      {
+        "object": "global",
+        "property": "setTimeout",
+      },
+      {
+        "object": "window",
+        "property": "top",
+      },
+    ],
+    "no-restricted-globals": [
+      "error",
+      {
+        "name": "setTimeout",
+      },
+      {
+        "name": "top",
+      },
+      {
+        "name": "parent",
+      },
+      {
+        "name": "frames",
+      },
+    ],
+  },
+  "settings": {
+    "better-tailwindcss": {
+      "entryPoint": "src/app/global.css",
+    },
+  },
+  "options": {
+    "typeCheck": true,
+    "typeAware": true,
+  },
+  "env": {
+    "builtin": true,
+  },
+}
