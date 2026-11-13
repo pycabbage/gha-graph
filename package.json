@@ -18,7 +18,7 @@
     "@primer/octicons-react": "^19.33.0",
     "@primer/primitives": "^11.10.0",
     "@primer/react": "^38.37.0",
-    "js-yaml": "^5.4.1",
+    "js-yaml": "^5.5.0",
     "next": "16.3.4",
     "react": "^19.1.7",
     "react-dom": "^19.1.7"
