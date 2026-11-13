@@ -8,7 +8,7 @@
         "@opennextjs/cloudflare": "^1.20.6",
         "@primer/octicons-react": "^19.33.0",
         "@primer/primitives": "^11.10.0",
-        "@primer/react": "^38.37.0",
+        "@primer/react": "^38.45.0",
         "js-yaml": "^5.4.1",
         "next": "16.3.4",
         "react": "^19.1.7",
@@ -440,13 +440,13 @@
 
     "@primer/behaviors": ["@primer/behaviors@1.10.3", "", {}, "sha512-cxxWDeR5IE7vdL0Ca0RAAAuPVrU+Bo8CSP1WfawGo4rEP1sZTi7hwl5i7TT0jCTCR0C9IfnQBfSPAkz0oznxUw=="],
 
-    "@primer/live-region-element": ["@primer/live-region-element@0.8.0", "", { "dependencies": { "@lit-labs/ssr-dom-shim": "^1.2.1" } }, "sha512-DIp04IeZvZ+gwCUcBchIvRwJA2PikP/6hnFhcLKgwttcg5OYjBH9t0cZjLnv10Aq1jN0rAFFG+WPMd3bw4hXcA=="],
+    "@primer/live-region-element": ["@primer/live-region-element@0.8.1", "", { "dependencies": { "@lit-labs/ssr-dom-shim": "^1.6.0" } }, "sha512-g7bNs9R2A2LfETMOWYsvtT0b5Q/QLM1Fz1vrTcWa5r2LbEhrPm7cZV5pEOleFKiGybrYWmdXteV2sBAQLXuxvg=="],
 
     "@primer/octicons-react": ["@primer/octicons-react@19.33.0", "", { "peerDependencies": { "react": ">=16.3" } }, "sha512-7VL8WuLXXZvUV/DP895ESFXPl/FJq816amCT3KZcmpQgxM1uv6lJGCcsEFpLX3K6SE+3qcmsftPpxn3ctr06+g=="],
 
     "@primer/primitives": ["@primer/primitives@11.10.0", "", {}, "sha512-ihZxIst4Izry284StKFjpbYvX6R/IBFTLu+qiuAmR93PsKF2hdjoabhSYwKI8iCxOUx94jVP55bI3NoY7STjYQ=="],
 
-    "@primer/react": ["@primer/react@38.37.0", "", { "dependencies": { "@github/mini-throttle": "^2.1.1", "@github/relative-time-element": "^5.0.0", "@lit-labs/react": "1.2.1", "@oddbird/popover-polyfill": "^0.5.2", "@primer/behaviors": "^1.10.3", "@primer/live-region-element": "^0.8.0", "@primer/octicons-react": "^19.28.1", "@primer/primitives": "10.x || 11.x", "@tanstack/react-virtual": "^3.13.18", "clsx": "^2.1.1", "color2k": "^2.0.3", "deepmerge": "^4.3.1", "focus-visible": "^5.2.1", "history": "^5.0.0", "hsluv": "1.0.1", "lodash.isempty": "^4.4.0", "lodash.isobject": "^3.0.2", "react-compiler-runtime": "^1.0.0", "react-intersection-observer": "^10.0.3" }, "peerDependencies": { "@types/react": "18.x || 19.x", "@types/react-dom": "18.x || 19.x", "@types/react-is": "18.x || 19.x", "react": "18.x || 19.x", "react-dom": "18.x || 19.x", "react-is": "18.x || 19.x" }, "optionalPeers": ["@types/react", "@types/react-dom", "@types/react-is"] }, "sha512-iV4hA3aWZAe5WPaxL0T7LgsBqXhsS9x1wIt1Ky7dbn8wgyTWBCfto+yq3JrWbfHRGAbm1Khijc6yhxBYZ53ryQ=="],
+    "@primer/react": ["@primer/react@38.45.0", "", { "dependencies": { "@github/mini-throttle": "^2.1.1", "@github/relative-time-element": "^5.0.0", "@lit-labs/react": "1.2.1", "@oddbird/popover-polyfill": "^0.5.2", "@primer/behaviors": "^1.10.3", "@primer/live-region-element": "^0.8.1", "@primer/octicons-react": "^19.28.1", "@primer/primitives": "10.x || 11.x", "@tanstack/react-virtual": "^3.13.18", "clsx": "^2.1.1", "color2k": "^2.0.3", "deepmerge": "^4.3.1", "focus-visible": "^5.2.1", "history": "^5.0.0", "hsluv": "1.0.1", "lodash.isempty": "^4.4.0", "lodash.isobject": "^3.0.2", "react-intersection-observer": "^10.0.3" }, "peerDependencies": { "@types/react": "18.x || 19.x", "@types/react-dom": "18.x || 19.x", "@types/react-is": "18.x || 19.x", "react": "18.x || 19.x", "react-dom": "18.x || 19.x", "react-is": "18.x || 19.x" }, "optionalPeers": ["@types/react", "@types/react-dom", "@types/react-is"] }, "sha512-pklVgCk1Vs5w8oUMYUpOY97xdFQmXi6quxxNgb0fOk2UMcpXieAPuoS3Tu6dPKzZ880vyrGmUlJVpxw3uP/QFw=="],
 
     "@sindresorhus/is": ["@sindresorhus/is@7.2.0", "", {}, "sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw=="],
 
@@ -961,8 +961,6 @@
     "raw-body": ["raw-body@3.0.2", "", { "dependencies": { "bytes": "~3.1.2", "http-errors": "~2.0.1", "iconv-lite": "~0.7.0", "unpipe": "~1.0.0" } }, "sha512-K5zQjDllxWkf7Z5xJdV0/B0WTNqx6vxG70zJE4N0kBs4LovmEYWJzQGxC9bS9RAKu3bgM40lrd5zoLJ12MQ5BA=="],
 
     "react": ["react@19.2.8", "", {}, "sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw=="],
-
-    "react-compiler-runtime": ["react-compiler-runtime@1.0.0", "", { "peerDependencies": { "react": "^17.0.0 || ^18.0.0 || ^19.0.0 || ^0.0.0-experimental" } }, "sha512-rRfjYv66HlG8896yPUDONgKzG5BxZD1nV9U6rkm+7VCuvQc903C4MjcoZR4zPw53IKSOX9wMQVpA1IAbRtzQ7w=="],
 
     "react-dom": ["react-dom@19.2.8", "", { "dependencies": { "scheduler": "^0.27.0" }, "peerDependencies": { "react": "^19.2.8" } }, "sha512-rVprimfGBG3DR+Tq0IQG2DT5PxKth1WIGDmj5yPmlzr4YBe7uyE+Du4oVqTDXZSHGGGXRtTJEGSSePyQCMBglQ=="],
 
